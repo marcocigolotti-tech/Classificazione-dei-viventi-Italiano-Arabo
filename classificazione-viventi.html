@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173b46">
+<title>La classificazione dei viventi | تصنيف الكائنات الحية</title>
+<style>
+:root{--ink:#173b46;--teal:#137c78;--paper:#f7f5ef;--pale:#e7f2ef;--line:#d5e4df;--white:#fff;--gold:#e5a83b;--muted:#58727a;--shadow:0 12px 30px #173b4610}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,"Noto Sans Arabic",sans-serif;font-size:18px;line-height:1.65}
+button{font:inherit}.wrap{width:min(1160px,calc(100% - 30px));margin:auto}.hero{padding:32px 0 24px;text-align:center}.eyebrow{color:var(--teal);font-weight:800;letter-spacing:.08em;font-size:.85rem}.hero-grid,.pair{display:grid;grid-template-columns:1fr 1fr;gap:22px}.hero-grid{margin:16px 0}.hero h1{font-size:clamp(1.65rem,4vw,2.7rem);line-height:1.2;margin:4px 0}.hero p{margin:7px 0;color:var(--muted)}.lang-label{font-size:.8rem;letter-spacing:.06em;color:var(--teal);font-weight:800;text-transform:uppercase}.ar{direction:rtl;text-align:right;font-family:Arial,"Noto Naskh Arabic",sans-serif}.hero .ar{text-align:center}
+.choose{background:var(--white);border:1px solid var(--line);box-shadow:var(--shadow);padding:20px;border-radius:22px;max-width:720px;margin:20px auto 0}.choose h2{margin:0 0 8px;font-size:1.1rem}.choose p{margin:4px 0}.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:16px}.pick,.ghost,.read,.stop{border:0;border-radius:14px;padding:11px 18px;font-weight:800;cursor:pointer;transition:transform .15s,background .15s}.pick{background:var(--teal);color:white;min-width:150px}.pick:hover,.read:hover{transform:translateY(-2px);background:#0d6663}.pick.secondary{background:#365e68}.ghost{background:transparent;color:var(--teal);border:1px solid var(--line)}.status{min-height:1.4em;color:var(--muted);font-size:.9rem;margin-top:12px}.content{display:none;padding-bottom:50px}.content.started{display:block}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 0}.toolbar .chosen{font-weight:800;color:var(--teal)}.section{margin:18px 0 28px;background:var(--white);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow);overflow:hidden}.section-head{background:var(--ink);color:white;padding:14px 22px;display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center}.section-head h2{font-size:1.25rem;line-height:1.3;margin:0}.section-head .lang-label{color:#a9e1d6}.pair{padding:18px 22px;border-bottom:1px solid var(--line)}.pair:last-child{border-bottom:0}.cell{min-width:0}.cell p{margin:0 0 11px}.read{background:var(--teal);color:white;font-size:.9rem;padding:8px 13px}.ar .read{direction:rtl}.read[hidden]{display:none}.rankbox{padding:18px 22px;display:grid;grid-template-columns:1fr 1fr;gap:22px;border-bottom:1px solid var(--line)}.rankbox ol{margin:0;padding-left:28px}.rankbox .ar ol{padding-right:28px;padding-left:0}.rankbox li{padding:4px 8px;margin:4px 0;border-radius:9px;background:#f0f6f4}.note{background:var(--pale);padding:12px 16px;border-radius:14px;margin-top:14px;font-weight:700}.photo-grid{padding:18px 22px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.photo{background:#f8fbfa;border:1px solid var(--line);border-radius:16px;overflow:hidden}.photo img{display:block;width:100%;height:210px;object-fit:cover;background:#e9efed}.photo figcaption{padding:9px 11px;font-size:.9rem;font-weight:700}.photo small{display:block;font-weight:400;color:var(--muted);line-height:1.4;margin-top:4px}.source-link{color:var(--teal);text-decoration:underline}.latin{font-style:italic}.photo-note{padding:0 22px 18px;color:var(--muted);font-size:.9rem}.footer{padding:24px 0;text-align:center;color:var(--muted);border-top:1px solid var(--line)}.credit{display:grid;grid-template-columns:1fr 1fr;gap:22px;font-weight:800;color:var(--ink);margin-bottom:8px}.fine{font-size:.85rem}.play-hint{font-size:.9rem;color:var(--muted)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:720px){body{font-size:16px}.wrap{width:min(100% - 18px,600px)}.hero-grid,.pair,.section-head,.rankbox,.credit{grid-template-columns:1fr;gap:10px}.hero-grid{gap:15px}.section-head{gap:3px}.section-head>div:nth-child(2){border-top:1px solid #ffffff30;padding-top:8px}.pair{padding:15px}.cell+.cell{border-top:1px dashed var(--line);padding-top:12px}.rankbox{padding:15px}.photo-grid{grid-template-columns:repeat(2,1fr);padding:15px;gap:10px}.photo img{height:160px}.toolbar{align-items:flex-start}.toolbar .ghost{margin-left:auto}}
+@media(max-width:380px){.photo-grid{grid-template-columns:1fr}.photo img{height:190px}}
+</style>
+</head>
+<body>
+<header class="hero wrap">
+  <div class="eyebrow">SCIENZE · SCIENCE · العلوم</div>
+  <div class="hero-grid">
+    <div><span class="lang-label">Italiano</span><h1>La classificazione dei viventi</h1><p>Specie, genere e categorie sistematiche</p></div>
+    <div class="ar" lang="ar"><span class="lang-label">العربية</span><h1>تصنيف الكائنات الحية</h1><p>النوع والجنس والفئات النظامية</p></div>
+  </div>
+  <div class="choose" id="chooser">
+    <div class="hero-grid">
+      <div><h2>Scegli la lingua della lettura</h2><p>I testi resteranno affiancati: italiano a sinistra e arabo a destra.</p></div>
+      <div class="ar" lang="ar"><h2>اختر لغة القراءة</h2><p>سيبقى النص باللغتين: الإيطالية على اليسار والعربية على اليمين.</p></div>
+    </div>
+    <div class="buttons"><button class="pick" type="button" data-start="it">▶ Italiano</button><button class="pick secondary" type="button" data-start="ar">▶ العربية</button></div>
+    <div class="status" id="startStatus" aria-live="polite"></div>
+  </div>
+</header>
+<main class="content wrap" id="lesson">
+  <div class="toolbar"><span class="chosen" id="chosenLang"></span><button class="ghost" id="changeLang" type="button">Cambia lingua di lettura / غيّر لغة القراءة</button></div>
+  <section class="section" aria-labelledby="title-class">
+    <div class="section-head"><div><span class="lang-label">ITALIANO</span><h2 id="title-class">1 · Classificazione e categorie</h2></div><div class="ar" lang="ar"><span class="lang-label">العربية</span><h2>١ · التصنيف والفئات</h2></div></div>
+    <article class="pair">
+      <div class="cell"><p id="p1-it">Per studiare gli esseri viventi, la scienza li organizza in gruppi. Questa operazione si chiama classificazione.</p><button class="read" data-audio="p1-it" data-lang="it" type="button">🔊 Ascolta questo paragrafo</button></div>
+      <div class="cell ar" lang="ar"><p id="p1-ar">لدراسة الكائنات الحية، ينظمها العلم في مجموعات. وتسمى هذه العملية التصنيف.</p><button class="read" data-audio="p1-ar" data-lang="ar" type="button">🔊 استمع إلى هذه الفقرة</button></div>
+    </article>
+    <article class="pair">
+      <div class="cell"><p id="p2-it">Le categorie sistematiche sono ordinate dalla più specifica, la specie, alla più ampia, il dominio.</p><button class="read" data-audio="p2-it" data-lang="it" type="button">🔊 Ascolta questo paragrafo</button></div>
+      <div class="cell ar" lang="ar"><p id="p2-ar">تُرتَّب الفئات النظامية من الأكثر تحديدًا، وهو النوع، إلى الأكثر شمولًا، وهو النطاق.</p><button class="read" data-audio="p2-ar" data-lang="ar" type="button">🔊 استمع إلى هذه الفقرة</button></div>
+    </article>
+    <div class="rankbox">
+      <div><span class="lang-label">Ordine delle categorie</span><ol><li>Specie</li><li>Genere</li><li>Famiglia</li><li>Ordine</li><li>Classe</li><li>Phylum</li><li>Regno</li><li>Dominio</li></ol><div class="note">Ogni livello comprende gruppi più ampi di quello precedente.</div></div>
+      <div class="ar" lang="ar"><span class="lang-label">ترتيب الفئات</span><ol><li>النوع</li><li>الجنس</li><li>الفصيلة</li><li>الرتبة</li><li>الطائفة</li><li>الشعبة</li><li>المملكة</li><li>النطاق</li></ol><div class="note">كل مستوى يضم مجموعات أوسع من المستوى الذي قبله.</div></div>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="title-specie">
+    <div class="section-head"><div><span class="lang-label">ITALIANO</span><h2 id="title-specie">2 · Specie e genere</h2></div><div class="ar" lang="ar"><span class="lang-label">العربية</span><h2>٢ · النوع والجنس</h2></div></div>
+    <article class="pair">
+      <div class="cell"><p id="p3-it">Una specie è un gruppo di organismi che, in condizioni naturali, possono riprodursi tra loro e generare discendenti fertili.</p><button class="read" data-audio="p3-it" data-lang="it" type="button">🔊 Ascolta questo paragrafo</button></div>
+      <div class="cell ar" lang="ar"><p id="p3-ar">النوع هو مجموعة من الكائنات الحية التي يمكنها، في الظروف الطبيعية، التكاثر فيما بينها وإنجاب نسل قادر على التكاثر.</p><button class="read" data-audio="p3-ar" data-lang="ar" type="button">🔊 استمع إلى هذه الفقرة</button></div>
+    </article>
+    <article class="pair">
+      <div class="cell"><p id="p4-it">Un genere riunisce più specie affini. Il genere <i>Panthera</i>, per esempio, comprende il leone, la tigre e il leopardo.</p><button class="read" data-audio="p4-it" data-lang="it" type="button">🔊 Ascolta questo paragrafo</button></div>
+      <div class="cell ar" lang="ar"><p id="p4-ar">يجمع الجنس أنواعًا متقاربة. فمثلًا، يضم جنس <i>Panthera</i> الأسد والببر والنمر.</p><button class="read" data-audio="p4-ar" data-lang="ar" type="button">🔊 استمع إلى هذه الفقرة</button></div>
+    </article>
+    <div class="rankbox">
+      <div><span class="lang-label">Esempi di specie del genere <i>Panthera</i></span><ul><li><i>Panthera leo</i> · leone</li><li><i>Panthera tigris</i> · tigre</li><li><i>Panthera pardus</i> · leopardo</li></ul></div>
+      <div class="ar" lang="ar"><span class="lang-label">أمثلة لأنواع من جنس <i>Panthera</i></span><ul><li><i>Panthera leo</i> · الأسد</li><li><i>Panthera tigris</i> · الببر</li><li><i>Panthera pardus</i> · النمر</li></ul></div>
+    </div>
+  </section>
+  <section class="section" aria-labelledby="title-linnaeus">
+    <div class="section-head"><div><span class="lang-label">ITALIANO</span><h2 id="title-linnaeus">3 · Linneo e il nome scientifico</h2></div><div class="ar" lang="ar"><span class="lang-label">العربية</span><h2>٣ · لينيوس والاسم العلمي</h2></div></div>
+    <article class="pair">
+      <div class="cell"><p id="p5-it">Nel Settecento il naturalista Carlo Linneo (1707–1778) contribuì a sistematizzare la classificazione e introdusse l’uso della nomenclatura binomiale.</p><button class="read" data-audio="p5-it" data-lang="it" type="button">🔊 Ascolta questo paragrafo</button></div>
+      <div class="cell ar" lang="ar"><p id="p5-ar">في القرن الثامن عشر، أسهم عالم الطبيعة كارل لينيوس (1707–1778) في تنظيم التصنيف، وأدخل استخدام التسمية الثنائية.</p><button class="read" data-audio="p5-ar" data-lang="ar" type="button">🔊 استمع إلى هذه الفقرة</button></div>
+    </article>
+    <article class="pair">
+      <div class="cell"><p id="p6-it">Il nome scientifico ha due parole: la prima indica il genere e inizia con la maiuscola; la seconda è l’epiteto specifico e inizia con la minuscola. Si scrivono in corsivo, per esempio <i>Panthera leo</i>.</p><button class="read" data-audio="p6-it" data-lang="it" type="button">🔊 Ascolta questo paragrafo</button></div>
+      <div class="cell ar" lang="ar"><p id="p6-ar">يتكوّن الاسم العلمي من كلمتين: الأولى تدل على الجنس وتبدأ بحرف كبير، والثانية هي اسم النوع وتبدأ بحرف صغير. وتُكتبان بخط مائل، مثل <i>Panthera leo</i>.</p><button class="read" data-audio="p6-ar" data-lang="ar" type="button">🔊 استمع إلى هذه الفقرة</button></div>
+    </article>
+    <div class="photo-grid" aria-label="Immagini degli organismi citati">
+      <figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Carl_Linnaeus.jpg" loading="lazy" alt="Ritratto di Carl Linnaeus"><figcaption><span>Carlo Linneo</span><small>J. H. Scheffel · Public Domain · <a class="source-link" href="https://commons.wikimedia.org/wiki/File:Carl_Linnaeus.jpg" target="_blank" rel="noopener">File su Wikimedia Commons</a></small></figcaption></figure>
+      <figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Panthera_leo.jpg" loading="lazy" alt="Leone, Panthera leo"><figcaption><span><i>Panthera leo</i> · leone</span><small>Hans Hillewaert · CC BY-SA 3.0 · <a class="source-link" href="https://commons.wikimedia.org/wiki/File:Panthera_leo.jpg" target="_blank" rel="noopener">File su Wikimedia Commons</a></small></figcaption></figure>
+      <figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tiger_panthera_tigris.jpg" loading="lazy" alt="Tigre, Panthera tigris"><figcaption><span><i>Panthera tigris</i> · tigre</span><small>John and Karen Hollingsworth, U.S. Fish &amp; Wildlife Service · Public Domain · <a class="source-link" href="https://commons.wikimedia.org/wiki/File:Tiger_panthera_tigris.jpg" target="_blank" rel="noopener">File su Wikimedia Commons</a></small></figcaption></figure>
+      <figure class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Leopard_panthera_pardus.jpg" loading="lazy" alt="Leopardo, Panthera pardus"><figcaption><span><i>Panthera pardus</i> · leopardo</span><small>Charles J. Sharp · CC BY-SA 3.0 · <a class="source-link" href="https://commons.wikimedia.org/wiki/File:Leopard_panthera_pardus.jpg" target="_blank" rel="noopener">File su Wikimedia Commons</a></small></figcaption></figure>
+    </div>
+    <p class="photo-note">Le immagini sono caricate da Wikimedia Commons e richiedono una connessione Internet. Apri il collegamento del singolo file per scaricare l’originale e consultare la licenza.</p>
+  </section>
+  <footer class="footer"><div class="credit"><span>Ideato dal Prof. Marco Cigolotti · realizzato con il supporto dell’IA</span><span class="ar" lang="ar">إعداد الأستاذ ماركو تشيغولوتي · أُنجز بمساعدة الذكاء الاصطناعي</span></div><div class="fine">Materiale didattico bilingue · مادة تعليمية ثنائية اللغة</div></footer>
+</main>
+<script>
+(() => {
+  const chooser = document.getElementById('chooser');
+  const lesson = document.getElementById('lesson');
+  const status = document.getElementById('startStatus');
+  const chosen = document.getElementById('chosenLang');
+  const change = document.getElementById('changeLang');
+  let readingLang = 'it';
+  function setLanguage(lang) {
+    readingLang = lang;
+    document.documentElement.lang = lang === 'it' ? 'it' : 'ar';
+    document.querySelectorAll('.read').forEach(button => {
+      button.hidden = button.dataset.lang !== lang;
+    });
+    chosen.textContent = lang === 'it' ? 'Lettura impostata: italiano' : 'لغة القراءة: العربية';
+    change.textContent = lang === 'it' ? 'Cambia lingua di lettura / غيّر لغة القراءة' : 'غيّر لغة القراءة / Cambia lingua di lettura';
+    chooser.hidden = true;
+    lesson.classList.add('started');
+    lesson.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  document.querySelectorAll('[data-start]').forEach(button => button.addEventListener('click', () => setLanguage(button.dataset.start)));
+  change.addEventListener('click', () => {
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    lesson.classList.remove('started');
+    chooser.hidden = false;
+    chooser.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  document.querySelectorAll('.read').forEach(button => button.addEventListener('click', () => {
+    if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
+      status.textContent = readingLang === 'it' ? 'La lettura vocale non è disponibile in questo browser.' : 'القراءة الصوتية غير متاحة في هذا المتصفح.';
+      return;
+    }
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(document.getElementById(button.dataset.audio).innerText.trim());
+    utterance.lang = readingLang === 'it' ? 'it-IT' : 'ar-SA';
+    const voices = window.speechSynthesis.getVoices();
+    const voice = voices.find(item => item.lang.toLowerCase().startsWith(readingLang));
+    if (voice) utterance.voice = voice;
+    utterance.rate = 0.88;
+    window.speechSynthesis.speak(utterance);
+    status.textContent = '';
+  }));
+})();
+</script>
+</body>
+</html>
